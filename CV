@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <title>Габриела Христова – .NET Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { padding: 2rem; background-color: #f8f9fa; font-family: Arial, sans-serif; }
+    .section-title { margin-top: 2rem; font-weight: bold; }
+    .profile-img { max-width: 150px; border-radius: 50%; }
+  </style>
+/head>
+<body>
+  <div class="container">
+    <div class="d-flex align-items-center mb-4">
+      <img src="https://i.imgur.com/jQwZy1w.png" alt="Profile Photo" class="profile-img me-3">
+      <div>
+        <h1 class="text-primary">Габриела Христова</h1>
+        <p class="lead">.NET Developer | C# | Umbraco CMS | Web Development</p>
+      </div>
+    </div>
+
+    <h2 class="section-title">📞 Контакти</h2>
+    <ul>
+      <li>Email: gabrielahristova39@gmail.com</li>
+      <li>Локация: Кюстендил</li>
+    </ul>
+
+    <h2 class="section-title">💻 Технически умения</h2>
+    <ul>
+      <li>C#, ASP.NET Core, Razor Pages</li>
+      <li>HTML5, CSS3, Bootstrap 5, JavaScript</li>
+      <li>SQL, SQLite</li>
+    </ul>
+
+    <h2 class="section-title">🎓 Образование</h2>
+    <p>Бакалавър по Информационни системи и технологии, Югозападен университет “Неофит Рилски”</p>
+  </div>
+</body>
+</html>
+"""
+
+# Запазване на HTML съдържанието като файл
+file_path = "/mnt/data/cv-gabriela-hristova.html"
+with open(file_path, "w", encoding="utf-8") as file:
+    file.write(cv_html_content)
+
+file_path
